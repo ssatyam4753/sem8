@@ -5,8 +5,7 @@ def fun():
     dct = dict()
     for i in range(1,3+1):
         dct[i] = i ** 2
-    for key, value in dct.items():
-        print(key,":",value)
+    print(dct)
 
 def main():
     fun()

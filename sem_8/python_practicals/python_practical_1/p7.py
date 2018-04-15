@@ -22,7 +22,7 @@ def main() :
 def compute_factorial(number) :
     if number == 0 :
         return 1
-    while(number > 0) :
+    if number > 0 :
         return number * compute_factorial(number-1)
 
 if __name__ == "__main__" :

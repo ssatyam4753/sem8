@@ -13,10 +13,10 @@ def main():
     #user input
     number = int(input("enter number: "))
     if number < 2 :
-        print ("there are no prime nnumbers less than 2")
+        print ("there are no prime numbers less than 2")
         return 0
     primes.append(2)
-    for i in range(3 , number+1) :
+    for i in range(3, number+1) :
         if check_prime(i) == True :
             primes.append(i)
         else :

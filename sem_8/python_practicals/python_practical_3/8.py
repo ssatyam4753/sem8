@@ -10,7 +10,7 @@ def removeDuplicates(lst):
     return ltemp
 
 def main():
-    lst = [[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]]
+    lst = list(map(int,input("enter list of lists: ").split()))
     lst = removeDuplicates(lst)
     print(lst)
 

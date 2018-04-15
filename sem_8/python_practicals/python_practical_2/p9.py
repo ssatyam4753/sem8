@@ -12,3 +12,16 @@ from itertools import permutations
 def main():
     temp,num = input("enter string and the integer value seperated by space :").split()
     num = int(num)
+    chList = list()
+    for i in temp:
+        chList.append(i)
+    perm = list(permutations(chList,num))
+    for i in range(len(perm)):
+        perm[i] = ''.join(perm[i])
+    perm.sort()
+    for item in perm:
+        print(item)
+
+
+if __name__ == "__main__":
+    main()

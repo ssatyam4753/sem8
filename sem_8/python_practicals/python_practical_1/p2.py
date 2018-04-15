@@ -11,12 +11,9 @@ def main():
     # initialise first fibonacci numbers
     first = 0
     second = 1
-    temp = 0
     while first <= N :
         print(first,end = " ")
-        temp = first
-        first = second
-        second = temp + first
+        first, second = second, first+second
 
 if __name__ == "__main__":
     main()

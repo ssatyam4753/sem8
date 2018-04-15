@@ -8,12 +8,13 @@ def main():
     lst = list()
     while count < 5:
         i = random.randint(1,1000)
-        print(i)
+        #print(i)
         if i % 7 == 0 and i % 5 == 0 :
-            lst.append(i)
-            count = count + 1
-        else :
-            continue
+            if i not in lst:
+                lst.append(i)
+                count = count + 1
+            else :
+                continue
     print(lst)
 
 
